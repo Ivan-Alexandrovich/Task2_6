@@ -36,10 +36,9 @@ public class Main {
             int rightSum = 0 ;
             for (int j = i+1 ; j < n ; j++)
                 rightSum += arr[j] ;
-          // индекс точки разделения
             if (LeftSum == rightSum)
                 flag = true;
         }
-        return flag;
+        return flag; //возвращает правду если такое место есть (где правая = левой сумме), иначе - ложь
     }
 }
